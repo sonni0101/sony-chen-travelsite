@@ -53,6 +53,7 @@ p {
   font-weight: 400;
   color: #335576;
   margin: 0;
+  text-align: left;
 }
 
 a:hover {
@@ -222,6 +223,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding-right: 2rem;
+    text-align: left;
   }
   .footer__detial-group-header {
     color: #DB7A4E;
@@ -277,6 +279,7 @@ a:hover {
   background-color: white;
   border-radius: 0.3125rem;
   width: 100%;
+  box-sizing: border-box;
 }
 .plan__card > ul {
   padding: 0px;
@@ -308,7 +311,7 @@ a:hover {
   }
   .plan__card {
     height: 23.75rem;
-    width: 15rem;
+    width: 17.5rem;
     padding: 0.5rem;
   }
 }/*# sourceMappingURL=destinations.css.map */

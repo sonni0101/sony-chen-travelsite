@@ -36,6 +36,11 @@
     color: $logo-default;
 }
 
+@mixin card-size-desktop{
+    height: 23.75rem;
+    width: 17.5rem;
+}
+
 @mixin text-nav-list{
     list-style-type: none;
 }

@@ -53,6 +53,7 @@ p {
   font-weight: 400;
   color: #335576;
   margin: 0;
+  text-align: left;
 }
 
 a:hover {
@@ -222,6 +223,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding-right: 2rem;
+    text-align: left;
   }
   .footer__detial-group-header {
     color: #DB7A4E;

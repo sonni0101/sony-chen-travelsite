@@ -53,6 +53,7 @@ p {
   font-weight: 400;
   color: #335576;
   margin: 0;
+  text-align: left;
 }
 
 a:hover {
@@ -222,6 +223,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding-right: 2rem;
+    text-align: left;
   }
   .footer__detial-group-header {
     color: #DB7A4E;
@@ -303,6 +305,7 @@ a:hover {
   display: flex;
   justify-content: flex-end;
   position: relative;
+  box-sizing: border-box;
 }
 .recommendation__card--hawaii {
   background-image: url(../assets/Images/hawaii.jpg);
@@ -332,7 +335,7 @@ a:hover {
   }
   .recommendation__card {
     height: 23.75rem;
-    width: 15rem;
+    width: 17.5rem;
   }
   .recommendation__card:hover {
     transform: translateY(-1rem);
