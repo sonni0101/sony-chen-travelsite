@@ -20,6 +20,14 @@
     color: $logo-default;
 }
 
+@mixin text-logo-tablet{
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: $logo-default;
+}
+
 @mixin text-logo-mobile{
     font-size: 1rem;
     line-height: 1.25rem;
@@ -30,4 +38,8 @@
 
 @mixin text-nav-list{
     list-style-type: none;
+}
+
+@mixin hoverAnimation($distance) {
+    transform: translateY($distance);
 }
