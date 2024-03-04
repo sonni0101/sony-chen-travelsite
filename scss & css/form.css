@@ -1,0 +1,390 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  cursor: url("../assets/Icons/plane-up.svg"), auto;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.875rem;
+  font-weight: 600;
+  color: #335576;
+}
+
+.h1-large {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: bolder;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 634px) {
+  .h1-large {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .h1-large {
+    font-size: 4.5rem;
+    line-height: 5.75rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  color: #335576;
+}
+
+h3 {
+  font-size: 0.5625rem;
+  line-height: 0.75rem;
+  font-weight: 600;
+  color: #335576;
+  margin: 0;
+}
+
+p {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: #335576;
+  margin: 0;
+  text-align: left;
+}
+
+a:hover {
+  cursor: url("../assets/Icons/plane-up-active.svg"), auto;
+}
+
+.button {
+  font-size: 1rem;
+  line-height: 0.8rem;
+  font-weight: 300;
+  color: #FFFFFF;
+  background-color: #DB7A4E;
+  padding: 1rem 0rem;
+  text-align: center;
+  width: 100%;
+  border-radius: 3rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 634px) {
+  .button {
+    margin-top: 2rem;
+    padding: 1rem 2.25rem;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .button {
+    margin-top: 2rem;
+    padding: 1rem 2.25rem;
+    width: auto;
+  }
+  .button:hover {
+    background-color: #CB6B48;
+    cursor: url("../assets/Icons/plane-up-active.svg"), auto;
+  }
+  .button:active {
+    background-color: #B45F40;
+    cursor: url("../assets/Icons/plane-up-active.svg"), auto;
+  }
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.site-header__logo {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #335576;
+}
+.site-header__list {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.site-header__item-container {
+  list-style-type: none;
+  padding: 0rem 0.5rem;
+}
+.site-header__item {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-decoration: none;
+  color: #000000;
+}
+.site-header__item--bold {
+  font-weight: 600;
+  color: #DB7A4E;
+}
+.site-header__item--bold:hover {
+  color: #CB6B48;
+}
+@media screen and (min-width: 1024px) {
+  .site-header {
+    padding: 0.5rem 3.5rem;
+  }
+  .site-header__logo {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #335576;
+  }
+  .site-header__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .site-header__item-container {
+    padding: 0rem 0.75rem;
+  }
+  .site-header__item:hover {
+    border-bottom: 4px solid #DB7A4E;
+    cursor: url("../assets/Icons/plane-up-active.svg"), auto;
+  }
+  .site-header__item {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .site-header__item--bold {
+    color: #DB7A4E;
+  }
+  .site-header__item--bold:hover {
+    color: #CB6B48;
+  }
+}
+@media screen and (min-width: 634px) {
+  .site-header {
+    padding: 0.5rem 3.5rem;
+  }
+  .site-header__logo {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #335576;
+  }
+  .site-header__item {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 2rem;
+  background-color: #FEFAF5;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer__detial-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer__detial-group > h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.footer__detial-group > p {
+  text-align: center;
+}
+.footer__detial-group-header {
+  color: #DB7A4E;
+  padding-bottom: 0.75rem;
+}
+.footer__icon {
+  height: 1.5rem;
+  padding: 0rem 0.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2.75rem 13.75rem;
+  }
+  .footer__section {
+    padding-right: 2.75rem;
+  }
+  .footer__container {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__detial-group {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    text-align: left;
+  }
+  .footer__detial-group > p {
+    text-align: left;
+  }
+  .footer__detial-group-header {
+    color: #DB7A4E;
+    padding-bottom: 0.75rem;
+  }
+  .footer__icon-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+  }
+  .footer__icon {
+    height: 1.5rem;
+    padding-right: 2rem;
+  }
+}
+
+.main-section {
+  padding: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main-section > p {
+  color: #FFFFFF;
+  padding-bottom: 1rem;
+  margin-left: 0rem;
+}
+.main-section--form {
+  background-image: url(../assets/Images/hot-tub.jpg);
+}
+@media screen and (min-width: 634px) {
+  .main-section {
+    padding: 2rem 5rem;
+  }
+  .main-section > p {
+    margin-left: 0.25rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-section {
+    padding: 4.5rem 5.625rem;
+  }
+  .main-section > p {
+    margin-left: 0.5rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.form__card {
+  height: auto;
+  background-color: white;
+  border-radius: 0.3125rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem;
+}
+.form__input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+.form__input--style {
+  padding: 0.75rem 1.25rem;
+  display: inline-block;
+  border: 1px solid #c0c0c0;
+  border-radius: 0.25rem;
+}
+.form__input--style:hover {
+  border: 1px solid #DB7A4E;
+  cursor: url("../assets/Icons/plane-up-active.svg"), auto;
+}
+.form__input > label {
+  padding-bottom: 0.5rem;
+}
+@media screen and (min-width: 634px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .form__card {
+    height: auto;
+    background-color: white;
+    border-radius: 0.3125rem;
+    width: auto;
+    box-sizing: border-box;
+    padding: 0.5rem;
+  }
+  .form__input {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 634px) {
+  .form {
+    display: flex;
+    flex-direction: row;
+  }
+  .form__vertical {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .form__card {
+    width: 100%;
+    padding: 3rem;
+  }
+  .form__input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .form {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0rem;
+    gap: 2.5rem;
+    width: 100%;
+  }
+  .form__vertical {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .form__card {
+    width: 60%;
+    padding: 3rem;
+  }
+  .form__input {
+    width: 100%;
+  }
+}
+
+.button-wrapper {
+  text-align: right;
+}/*# sourceMappingURL=form.css.map */

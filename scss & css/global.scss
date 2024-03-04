@@ -23,8 +23,8 @@ h1{
     margin-bottom: 1.5rem;
 
     @include tablet{
-        font-size: 4rem;
-        line-height: 5rem;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
     }
 
     @include desktop{
@@ -129,6 +129,15 @@ a:hover{
             line-height: 1rem;
             text-decoration: none;
             color: $link;
+
+            &--bold{
+                font-weight: 600;
+                color: $primary-button-default;
+            }
+
+            &--bold:hover{
+                color: $primary-button-hover;
+            }
         }
 
     @include desktop{
@@ -150,7 +159,6 @@ a:hover{
 
         &__item:hover{
             border-bottom: 4px solid $border-organge;
-            color: $link-hover;
             cursor: url('../assets/Icons/plane-up-active.svg'), auto;
         }
 
@@ -158,6 +166,14 @@ a:hover{
             font-size: 0.875rem;
             line-height: 1.5rem;
             padding-bottom: 0.5rem;
+
+            &--bold{
+                color: $primary-button-default;
+            }
+    
+            &--bold:hover{
+                color: $primary-button-hover;
+            }
         }
     }
 
@@ -203,6 +219,10 @@ a:hover{
         margin-bottom:0.5rem;
     }
 
+    &__detial-group > p{
+        text-align: center;
+    }
+
     &__detial-group-header{
         color: $text-accent-orange;
         padding-bottom: 0.75rem;
@@ -233,6 +253,10 @@ a:hover{
             display: flex;
             flex-direction: column;
             padding-right: 2rem;
+            text-align: left;
+        }
+
+        &__detial-group > p{
             text-align: left;
         }
 

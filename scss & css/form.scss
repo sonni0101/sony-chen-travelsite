@@ -1,0 +1,144 @@
+@import "./partials/mixins";
+@import "./partials/variables";
+@import "./global.scss";
+
+.main-section{
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    > p{
+        color: $text-inverse;
+        padding-bottom: 1rem;
+        margin-left: 0rem;
+    }
+
+    &--form{
+        background-image: url(../assets/Images/hot-tub.jpg);
+    }
+
+    @include tablet{
+        padding: 2rem 5rem;
+
+        > p{
+            margin-left: 0.25rem;
+        }
+
+    }
+
+    @include desktop{
+        padding: 4.5rem 5.625rem;
+
+        > p{
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    &__card{
+        height: auto;
+        background-color: white;
+        border-radius: 0.3125rem;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1.5rem;
+    }
+
+    &__input{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+
+        &--style{
+            padding: 0.75rem 1.25rem;
+            display: inline-block;
+            border: 1px solid $border-grey;
+            border-radius: 0.25rem;
+
+            &:hover{
+                border: 1px solid $border-organge;
+                cursor: url('../assets/Icons/plane-up-active.svg'), auto;
+            }
+        }
+    }
+
+    &__input > label{
+        padding-bottom: 0.5rem;
+    }
+
+    @include tablet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    &__card{
+        height: auto;
+        background-color: white;
+        border-radius: 0.3125rem;
+        width: auto;
+        box-sizing: border-box;
+        padding: 0.5rem;
+    }
+
+    &__input{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+    }
+
+    @include tablet{
+        display: flex;
+        flex-direction: row;
+
+        &__vertical{
+            display: flex;
+            flex-direction: row; 
+            gap: 1.5rem;       
+        }
+
+        &__card{
+            width: 100%;
+            padding: 3rem;
+        }
+        &__input{
+            width: 100%;
+        }
+    }
+
+    @include desktop{
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 0rem;
+        gap: 2.5rem;
+        width: 100%;
+
+        &__vertical{
+            display: flex;
+            flex-direction: row; 
+            gap: 1.5rem;       
+        }
+
+        &__card{
+            width: 60%;
+            padding: 3rem;
+        }
+        &__input{
+            width: 100%;
+        }
+    }
+}
+
+.button-wrapper{
+    text-align: right;
+}

@@ -21,8 +21,8 @@ h1 {
 }
 @media screen and (min-width: 634px) {
   .h1-large {
-    font-size: 4rem;
-    line-height: 5rem;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -128,6 +128,13 @@ a:hover {
   text-decoration: none;
   color: #000000;
 }
+.site-header__item--bold {
+  font-weight: 600;
+  color: #DB7A4E;
+}
+.site-header__item--bold:hover {
+  color: #CB6B48;
+}
 @media screen and (min-width: 1024px) {
   .site-header {
     padding: 0.5rem 3.5rem;
@@ -148,13 +155,18 @@ a:hover {
   }
   .site-header__item:hover {
     border-bottom: 4px solid #DB7A4E;
-    color: #4D4D4D;
     cursor: url("../assets/Icons/plane-up-active.svg"), auto;
   }
   .site-header__item {
     font-size: 0.875rem;
     line-height: 1.5rem;
     padding-bottom: 0.5rem;
+  }
+  .site-header__item--bold {
+    color: #DB7A4E;
+  }
+  .site-header__item--bold:hover {
+    color: #CB6B48;
   }
 }
 @media screen and (min-width: 634px) {
@@ -196,6 +208,9 @@ a:hover {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
+.footer__detial-group > p {
+  text-align: center;
+}
 .footer__detial-group-header {
   color: #DB7A4E;
   padding-bottom: 0.75rem;
@@ -223,6 +238,9 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding-right: 2rem;
+    text-align: left;
+  }
+  .footer__detial-group > p {
     text-align: left;
   }
   .footer__detial-group-header {

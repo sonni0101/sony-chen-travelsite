@@ -42,6 +42,7 @@
         border-radius: 0.3125rem;
         width: 100%;
         box-sizing: border-box;
+        padding: 0.5rem;
     }
 
     &__card > ul{
@@ -68,6 +69,12 @@
         font-size: 1rem;
         color: $text-accent;
         background-color: $background-subtle;
+    }
+
+    @include tablet{
+        &__card{
+            padding: 1rem;
+        }
     }
 
     @include desktop{
