@@ -99,7 +99,6 @@ a:hover{
 }
 
 .site-header{
-
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -199,7 +198,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem 2rem;
+    padding: 2rem;
     background-color: $background-subtle;
 
     &__container{
@@ -215,8 +214,8 @@ a:hover{
     }
 
     &__detial-group > h2{
-        margin-top:1.5rem;
-        margin-bottom:0.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
     }
 
     &__detial-group > p{
@@ -254,6 +253,10 @@ a:hover{
             flex-direction: column;
             padding-right: 2rem;
             text-align: left;
+        }
+
+        &__detial-group > h2{
+            margin-bottom: 2rem;
         }
 
         &__detial-group > p{
