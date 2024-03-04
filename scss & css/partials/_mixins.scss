@@ -1,0 +1,33 @@
+@import '../partials/variables';
+
+@mixin desktop{
+    @media screen and (min-width: $desktop-breakpoint){
+     @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin text-logo-desktop{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: $logo-default;
+}
+
+@mixin text-logo-mobile{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: $logo-default;
+}
+
+@mixin text-nav-list{
+    list-style-type: none;
+}
