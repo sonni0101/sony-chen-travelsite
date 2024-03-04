@@ -206,7 +206,7 @@ a:hover {
 }
 .footer__detial-group > h2, .footer__detial-group > .destination {
   margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 .footer__detial-group > p {
   text-align: center;
@@ -258,7 +258,7 @@ a:hover {
   }
   .footer__icon {
     height: 1.5rem;
-    padding-right: 2rem;
+    padding: 0rem 2rem 0rem 0rem;
   }
 }
 
